@@ -44,7 +44,7 @@ public class App
                     break;
                 case 3:
                     System.out.println("Valitse hirviö, johon hyökätä:");
-                    cave.listMonsters();
+                    cave.listMonstersAttack();
                     int choice = scanner.nextInt();
                     scanner.nextLine();
 
@@ -83,5 +83,6 @@ public class App
         scanner.close();
     }
 }
+
 
 
