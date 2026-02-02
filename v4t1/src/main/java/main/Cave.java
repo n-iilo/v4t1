@@ -34,6 +34,18 @@ public class Cave implements Serializable {
         }
     }
 
+    public void listMonstersAttack() {
+        if (monsters.isEmpty()) {
+            System.out.println("Luola on tyhjä.");
+            return;
+        }
+        int i = 1;
+        for (Monster monster : monsters) {
+             monster.printInfo(i);
+             i++;
+        }
+    }
+    
     public void removeMonster(Monster monster) {
         monsters.remove(monster);
     }
