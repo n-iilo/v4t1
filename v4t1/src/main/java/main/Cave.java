@@ -23,10 +23,10 @@ public class Cave implements Serializable {
 
     public void listMonsters() {
         if (monsters.isEmpty()) {
-            System.out.println("Luolassa ei ole hirviöitä.");
+            System.out.println("Luola on tyhjä.");
             return;
         }
-        
+        System.out.println("Luolan hirviöt:");
         int i = 1;
         for (Monster monster : monsters) {
              monster.printInfo(i);
