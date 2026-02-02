@@ -22,7 +22,7 @@ public class Monster implements Serializable {
             System.out.println("Hirviöllä on " + health + " elämää jäljellä.");
             return true;
         } else {
-            System.out.println("Hirviö kuoli.");
+            System.out.println(type + " on kuollut!");
             return false;
         }
     }
